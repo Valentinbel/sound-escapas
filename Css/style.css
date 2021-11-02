@@ -1,0 +1,565 @@
+﻿:root {
+    --gold-color: #334a97;
+    --yellow-color: #fbff05;
+    --noir-background: #131518;
+    --white: white;
+}
+
+
+@font-face {
+    font-family: 'TT Norms Light';
+    src: url('../Fonts/TT Norms Light.ttf') format('truetype'), url('../Fonts/TT Norms Light.otf') format('truetype');
+}
+@font-face {
+    font-family: 'TT Norms Pro DemiBold';
+    src: url('../Fonts/TT Norms Pro DemiBold.ttf') format('truetype'), url('../Fonts/TT Norms Pro DemiBold.otf') format('truetype');
+}
+@font-face {
+    font-family: 'bold';
+    src: url('../Fonts/bold.ttf') format('truetype'), url('../Fonts/bold.otf') format('truetype');
+}
+@font-face {
+    font-family: 'TT Norms Pro DemiBold Italic';
+    src: url('../Fonts/TT Norms Pro DemiBold Italic.ttf') format('truetype'), url('../Fonts/TT Norms Pro DemiBold Italic.otf') format('truetype');
+}
+
+body {
+    font-family: 'TT Norms Light';
+    margin: 0px;
+    background-color: var(--noir-background);
+    color: var(--white);
+}
+body, .ng-isolate-scope, home, index2, index, headerview{
+overflow: visible;
+}
+
+/* vue mobile */
+@media (max-width:576px) {
+	body{
+		font-size: 15px;
+	}
+	.footeradress, .footer {
+		font-size: 80%;
+	}
+	.footer .navbar-nav{
+		justify-content: center;
+		line-height:1;
+	}
+	.separation{
+		display:none;
+	}
+	
+}
+/****** Break menu ******/
+@media (max-width:769px) {
+	.footer .separation{
+		display: none;
+	}
+	.footer .navbar-nav{
+	    justify-content: center;
+	}
+}
+
+@media (min-width:577px) {
+    .mobilemenu {
+        display: none !important;
+    }
+    .modal-dialog {
+        max-width: 100%;
+    }
+}
+
+@media (max-width:576px) {
+    .computermenu {
+        display: none !important;
+    }
+
+    .legendeBassan{
+        display: none !important;
+    }
+}
+
+.dropdown-menu-right {
+    text-align: end;
+}
+
+/* ***Reconfig container small screens from bootstrap *** */
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+@media (min-width:576px) {
+    .container {
+        margin: auto;
+        max-width: 95%;
+    }
+
+	.facebook, .instagram, .bandcamp, .soundcloud, .vimeo, .youtube, .pdf{
+	margin: 0px 5px;
+	}
+}
+
+@media (min-width:768px) {
+    .container {
+        margin: auto;
+        max-width: 95%;
+    }
+}
+
+@media (min-width:992px) {
+    .container {
+        margin: auto;
+        max-width: 95%;
+    }
+}
+
+@media (min-width:1200px) {
+    .container {
+        max-width: 1140px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+.container-fluid {
+    padding-right: 0px; 
+    padding-left: 0px;
+}
+
+/*
+ //espacement apres menu header
+.contenu{  
+    margin-top: 12rem;
+}*/
+
+/*----------Content-------------*/
+strong, b {
+    font-family: 'bold';
+}
+
+p {
+   /* margin-top: 30px;*/
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.yellow {
+    color: var(--yellow-color);
+}
+
+.gold {
+    color: var(--gold-color);
+ }
+ 
+ a.blacklink{
+    color: black !important;
+    text-decoration: none !important;
+  }
+  a.blacklink:hover {
+    color: var(--gold-color);
+    }
+
+/*espacement entre chaque <article> voir conversion em (responsive) center pixels/points...*/
+article{
+    margin-top:2em;
+}
+
+.Line {
+    width: 100%;
+    height: 5px;
+    border-bottom: 3px dotted var(--gold-color);
+    margin: 40px 0;
+    opacity: 0.6;
+    /*https://stackoverflow.com/questions/43610864/how-to-add-dotted-line-after-text*/
+}
+
+/*texte sur 2 colonnes*/
+.Deuxcolonnes {
+    -webkit-column-count: 2; /* Old Chrome, Safari and Opera */
+    -moz-column-count: 2; /* Old Firefox */
+    column-count: 2;
+}
+
+.btn-primary {
+    margin-top: 20px;
+}
+
+/* Polaroids*/
+.flex-container{
+padding-top: 1rem;
+    flex: 1;
+    margin: auto !important;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*----------links-------------*/
+.nav-tabs .nav-item.show
+.nav-link, .nav-tabs .nav-link.active {
+    color: var(--white);
+    background-color: var(--gold-color);
+    border-color: transparent;
+}
+
+a:link, a:visited {
+    color: var(--yellow-color);
+    text-decoration: underline;
+}
+
+a:hover, a:active {
+    color: var(--gold-color);
+    text-decoration: none;
+}
+
+
+.dropdown-item.active, .dropdown-item:active {
+color: #16181b;
+text-decoration: none;
+background-color: #f8f9fa;
+}
+
+/*------text table langues-----*/
+.nav-tabs .nav-link{
+    margin-top: 1rem;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+    background-color: var(--gold-color);
+}
+
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{
+    border-color:transparent;
+}
+
+
+.nav-tabs {
+    border-bottom: none;
+}
+
+.nav-tabs a:link, .nav-tabs a:visited {
+    color: var(--white);
+    padding: 3px 10px;
+    background-color: none;
+    text-decoration: none;
+}
+
+.nav-tabs a:hover {
+    background-color: var(--yellow-color);
+    text-decoration: none;
+}
+
+.nav-tabs a:active {
+    background-color: var(--gold-color);
+    text-decoration: none;
+}
+
+    /*-------------Menu------------*/
+
+
+  /*Top Screen*/
+.fondNeblum {
+z-index: -1000;
+}
+
+.dottedline {
+    background-image: linear-gradient(to right, var(--gold-color) 15%, rgba(133, 117, 78, 0) 0%);
+    background-position: bottom;
+    background-size: 7px 2px;
+    background-repeat: repeat-x;
+}
+
+.logoNeblum {
+    margin-top: 2vw;
+    padding-bottom: 22px;
+}  
+
+.Header {
+    margin: 0px;
+    padding: 0px;
+}
+
+    /*Navigation Bar */
+
+.navbar {
+    width: 100%;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    transition: 500ms ease;
+}
+
+/*repartition elements navbar*/
+.navbar-nav, .mr-auto {
+    flex: 1;
+    margin: auto !important;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar.scrolled {
+    background: var(--noir-background);
+    opacity: 0.8;
+}
+
+.dropdown-menu{
+    margin: 0rem;
+}
+
+li .nav-link {
+    color: white;
+    font-size: 1.3em;
+    text-decoration: none;
+}
+
+li .dropdown-menu, li .dropdown-menu:hover {
+    background-color: var(--noir-background);
+    font-size: 1.1em;
+}
+
+li .dropdown-item {
+    text-decoration: none;
+    /*font-weight: 800;*/
+}
+
+/*absence de triangle menu à derouler*/
+.dropdown-toggle::after {
+    display: none;
+}
+
+/*menu hover toggle*/
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+.dropdown > .dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+
+.separation {
+    padding: .5rem 0rem;
+    font-size: 1.3em;
+    cursor: default;
+}
+
+.navbar-expand .navbar-nav .nav-link{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+/*------FOOTER-------*/
+/* .footer {
+    box-sizing: content-box;
+} */
+.footer.navbar-expand .navbar-nav .nav-link {
+    padding-right: 0.3rem;
+    padding-left: 0.3rem;
+}
+
+.dottedfooter{
+    margin-top: 2rem;
+    background-image: linear-gradient(to right, var(--yellow-color) 15%, rgba(133, 117, 78, 0) 0%);
+    background-position: bottom;
+    background-size: 7px 2px;
+    background-repeat: repeat-x;
+}
+
+li .nav-link.yellow{
+    color: var(--yellow-color);
+}
+
+p.footeradress{
+    text-align: center;
+    color: var(--yellow-color);
+	margin-bottom: 2px;
+}
+a.footerlink{
+    text-decoration: underline;
+    color: var(--yellow-color);
+}
+
+/* Agenda */
+.badge-or{
+  background-color: var(--gold-color);
+  border-radius: 3px; 
+}
+
+.badge-jaune{
+  background-color: var(--yellow-color);
+  border-radius: 3px; 
+  color: #131518;
+}
+
+/*------SOCIAU-------*/
+.download{
+	background: url("../../../../../Images/sociau/dwnl_link.png") no-repeat;
+    height: 45px;
+	width: 47px;
+	background-size: 47px 45px;}
+.download:hover{
+    background-image: url("../../../../../Images/sociau/dwnl_hover.png");}
+    
+.facebook{
+	background: url("../../../../../Images/sociau/fb_link.png") no-repeat;
+    height: 45px;
+	width: 26px;
+	background-size: 26px 45px;}
+.facebook:hover{
+    background-image: url("../../../../../Images/sociau/fb_hover.png");}
+    
+.instagram{
+	background: url("../../../../../Images/sociau/insta_link.png") no-repeat;
+    height: 45px;
+	width: 49px;
+	background-size: 49px 45px;}
+.instagram:hover{
+    background-image: url("../../../../../Images/sociau/insta_hover.png");}
+
+.twitter{
+	background: url("../../../../../Images/sociau/twitter_link.png") no-repeat;
+    height: 45px;
+	width: 54px;
+	background-size: 54px 45px;}
+.twitter:hover{
+    background-image: url("../../../../../Images/sociau/twitter_hover.png");}
+    
+.apple{
+	background: url("../../../../../Images/sociau/apple_link.png") no-repeat;
+    height: 45px;
+	width: 40px;
+	background-size: 40px 45px;}
+.apple:hover{
+    background-image: url("../../../../../Images/sociau/apple_hover.png");}
+
+.spotify{
+	background: url("../../../../../Images/sociau/spot_link.png") no-repeat;
+    height: 45px;
+	width: 49px;
+	background-size: 49px 45px;}
+.spotify:hover{
+    background-image: url("../../../../../Images/sociau/spot_hover.png");}
+
+.bandcamp{
+	background: url("../../../../../Images/sociau/bc_link.png") no-repeat;
+    height: 45px;
+	width: 65px;
+	background-size: 65px 45px;}
+.bandcamp:hover{
+    background-image: url("../../../../../Images/sociau/bc_hover.png");}
+
+.soundcloud{
+	background: url("../../../../../Images/sociau/sound_link.png") no-repeat;
+    height: 45px;
+	width: 64px;
+	background-size: 64px 45px;}
+.soundcloud:hover{
+    background-image: url("../../../../../Images/sociau/sound_hover.png");}
+
+.vimeo{
+	background: url("../../../../../Images/sociau/vimeo_link.png") no-repeat;
+    height: 45px;
+	width: 43px;
+	background-size: 43px 45px;}
+.vimeo:hover{
+    background-image: url("../../../../../Images/sociau/vimeo_hover.png");}
+
+.youtube {
+	background: url("../../../../../Images/sociau/ytb_link.png") no-repeat;
+    height: 45px;
+    width: 42px;
+    background-size: 42px 45px;}
+.youtube:hover{
+    background-image: url("../../../../../Images/sociau/ytb_hover.png");}
+
+.lp{
+	background: url("../../../../../Images/sociau/lp_link.png") no-repeat;
+    height: 45px;
+	width: 51px;
+	background-size: 51px 45px;}
+.lp:hover{
+    background-image: url("../../../../../Images/sociau/lp_hover.png");}
+
+.tape{
+	background: url("../../../../../Images/sociau/tape_link.png") no-repeat;
+    height: 45px;
+	width: 34px;
+	background-size: 34px 45px;}
+.tape:hover{
+    background-image: url("../../../../../Images/sociau/tape_hover.png");}
+
+.cd{
+	background: url("../../../../../Images/sociau/cd_link.png") no-repeat;
+    height: 45px;
+	width: 48px;
+	background-size: 48px 45px;}
+.cd:hover{
+    background-image: url("../../../../../Images/sociau/cd_hover.png");}
+
+.shop{
+	background: url("../../../../../Images/sociau/shop_link.png") no-repeat;
+    height: 45px;
+	width: 56px;
+	background-size: 56px 45px;}
+.shop:hover{
+    background-image: url("../../../../../Images/sociau/shop_hover.png");}
+
+.lyrics{
+	background: url("../../../../../Images/sociau/lyrics_link.png") no-repeat;
+    height: 45px;
+	width: 70px;
+	background-size: 70px 45px;}
+.lyrics:hover{
+    background-image: url("../../../../../Images/sociau/lyrics_hover.png");}
+    
+.pdf{
+    background: url("../../../../../Images/sociau/pdf_link.png") no-repeat;
+    height: 45px;
+	width: 40px;
+	background-size: 40px 45px;}
+.pdf:hover{
+    background-image: url("../../../../../Images/sociau/pdf_hover.png");}
+    
+/*------MALONS (ARTS VISUAUS)-------*/
+.column{
+	max-width: 50%;
+    flex: 1 1 50%;
+    padding: 0px;
+	line-height: 0;
+}
+
+.row{
+	padding-top: 1rem;
+    display: flex;
+    flex: 1 1 0%;
+    margin: auto !important;
+    }
+    
+.column img {
+	margin-top: 0px;
+	vertical-align: middle;
+	max-width: 100%;
+}
+    
+/*------VIDEO RATIO PERSO-------*/
+
+.embed-responsive-companhia::before{
+        padding-top: 30%;
+}
+
+/*------next previsou carousel-------*/
+.carousel-control-prev-icon{
+   background-image: url("../../../../../Images/previous.svg");
+}
+.carousel-control-next-icon{
+   background-image: url("../../../../../Images/next.svg");
+}
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+    display: block;
+    justify-content: center;
+    display: flex;
+}
+

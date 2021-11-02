@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html xml:lang="fr" lang="fr" ng-app="RodinApp">
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="utf-8" />
+      <meta http-equiv="Content-Language" content="fr, en, oc, cat" />
+      <base href="/" />
+      <link rel="icon" href="./Images/icon_logo.png" type="image/gif" >
+      <!--sizes="16x16" -->
+      <!--Bootstrap5-->
+      <!-- CSS only 
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+      -->
+
+      <!-- bootstrap4-->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+      <!-- JS, Popper.js, and jQuery -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+      
+      <!--Angular-->
+      <script src="./Scripts/Frameworks/AngularJS.js"></script>
+      <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular-animate.min.js"></script>-->
+      <script src="./Scripts/Frameworks/angular-animate_min.js"></script>
+      <script src="./Scripts/Frameworks/angular-route_min.js"></script>
+      <link href="./Scripts/Frameworks/angular_ui-grid.css" rel="stylesheet" />
+      <script src="./Scripts/Frameworks/angular_ui-grid.js"></script> 
+      <script src="./Scripts/Frameworks/angular_ui-bootstrap.js"></script>
+      <script src="./Scripts/Frameworks/angular_touch_min.js"></script>
+      <script src="./Scripts/Frameworks/anchorScroll.js"></script>
+      <!--ng-quill-->
+      <link href="./Scripts/Frameworks/quill_snow.css" rel="stylesheet" />
+      <link href="./Scripts/Frameworks/quill_bubble.css" rel="stylesheet" />
+      <script src="./Scripts/Frameworks/quill1_2.js"></script>
+      <script src="./Scripts/Frameworks/ng-quill._min1_2.js"></script>
+      <!--ng-sanitize-->
+      <script src="./Scripts/Frameworks/angular-sanitize_1-7-8_angular-sanitize.js"></script>
+      <!--CSS & FONTS-->
+      <link href="./Css/style.css" rel="stylesheet" />
+      <!--APP-->
+      <script src="./Scripts/App.js"></script>
+      <!--VIEWS-->
+      <script src="./Scripts/Views/Index2ViewModel.js"></script>
+      <script src="./Scripts/Views/Home/HomeViewModel.js"></script>
+      <script src="./Scripts/Views/Home/Menus/Header/HeaderViewModel.js"></script>
+      <script src="./Scripts/Views/Home/Menus/Footer/FooterViewModel.js"></script>
+      <script src="./Scripts/Views/Home/Menus/404/ErrorViewModel.js"></script>
+      <script src="./Scripts/Views/Home/Neblum/Neblum/NeblumViewModel.js"></script>
+   </head>
+   <body ng-controller="RodinController">
+      <div class="container-fluid">
+         <index2></index2>
+      </div>
+   </body>
+</html>

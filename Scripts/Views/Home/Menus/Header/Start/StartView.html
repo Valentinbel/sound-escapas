@@ -1,0 +1,6 @@
+﻿<div>
+    <login class="PrivateView" ng-show="vm.HaveAccount"></login>
+
+    <register class="PrivateView" ng-show="!vm.HaveAccount"></register>
+    <loading ng-show="vm.IsLoading()"></loading>
+</div>

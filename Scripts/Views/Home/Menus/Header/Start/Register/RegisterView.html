@@ -1,0 +1,48 @@
+﻿<div class="Content was-validated">
+    <form data-toggle="validator" id="RegisterForm" name="RegisterForm" novalidate>
+        <h2>Register</h2>
+
+        <div class="form-group">
+            <label for="Name">Name</label>
+            <input type="text" class="form-control" name="Name" id="Name" ng-model="vm.Name" placeholder="Enter Name" required data-error="Please enter UserName.">
+        </div>
+
+        <div class="form-group">
+            <label for="Surname">Surname</label>
+            <input type="text" class="form-control" name="Surname" id="Surname" ng-model="vm.Surname" placeholder=" Please enter User Surname" required>
+        </div>
+
+        <div class="form-group">
+            <label for="Email" ng-class="vm.EmailClass">Email address</label>
+            <input type="email" class="form-control" name="Email" id="regEmail" ng-model="vm.Email" aria-describedby="emailHelp" placeholder="Enter your email" required>
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+
+        <div class="form-group">
+            <label for="BirthDate">Birth Date</label>
+            <input type="date" class="form-control" name="BirthDate" id="BirthDate" ng-model="vm.BirthDate" placeholder=" Please enter user Birth Date" required>
+        </div>
+
+        <div class="form-group">
+            <label for="Password" ng-class="vm.PasswordClass">Password</label>
+            <input type="password" class="form-control" name="Password" id="regPassword" ng-model="vm.Password" placeholder="Enter Password" required>
+        </div>
+
+        <!--<div class="form-check">
+        <input type="checkbox" class="form-check-input" id="IsMaster" ng-model="vm.IsMaster">
+        <label for="IsMaster">Is Master</label>
+    </div>-->
+
+        <button type="submit" value="Submit" class="btn btn-primary" id="Register" ng-click="vm.Register()"
+                ng-disabled="RegisterForm.Name.$pristine || RegisterForm.Name.$invalid || RegisterForm.Surname.$pristine || RegisterForm.Surname.$invalid || RegisterForm.Email.$pristine || RegisterForm.Email.$invalid ||RegisterForm.BirthDate.$pristine || RegisterForm.BirthDate.$invalid ||
+            RegisterForm.Password.$pristine || RegisterForm.Password.$invalid">
+            Register
+        </button>
+
+        <button class="btn btn-primary" id="RedirectLogin" ng-click="vm.RedirectLogin()">
+            I have an account
+        </button>
+
+        <button class="btn btn-primary" ng-click="vm.ClearForm()">Clear</button>
+    </form>
+</div>
